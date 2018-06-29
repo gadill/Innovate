@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Innovate_1" max_length="40" name="x_243968_innovate_innovate_1" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="msvmc" label="Idea Type" mandatory="true" max_length="40" name="u_choice_5" type="string">
+            <choice>
+                <element label="MSVMC" sequence="0" value="msvmc"/>
+                <element label="ServiceNow" sequence="1" value="servicenow"/>
+                <element label="Cloud Tools" sequence="2" value="cloud tools"/>
+                <element label="SharePoint" sequence="3" value="sharepoint"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Solution" max_length="40" name="u_string_1" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Short description" mandatory="true" max_length="40" name="u_string_3" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="1000" name="u_string_4" type="string"/>
+    </element>
+</database>
